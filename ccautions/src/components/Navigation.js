@@ -11,14 +11,14 @@ const gotoHome = ()=>{
 }
 
 //route for add caution page
-const gotoCaution = ()=>{
-    nav('/caution');
+const gotoAdd = ()=>{
+    nav('/add');
 }
 
 return (
     <nav className='container d-flex flex-row m-3'>
         <h2 className='p-2 m-1' onClick={gotoHome}><JournalText /></h2>
-        <h2 className='p-2 m-1' onClick={gotoCaution}><PlusCircleFill /></h2>
+        <h2 className='p-2 m-1' onClick={gotoAdd}><PlusCircleFill /></h2>
     </nav>
 );
 };
