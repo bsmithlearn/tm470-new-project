@@ -1,4 +1,4 @@
-//AddressList.js
+//CautionList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navigation from './Navigation';
@@ -8,14 +8,14 @@ const CautionList = () => {
 const [cautions, setCautions] = useState([]);
 const [selectedCaution, setSelectedCaution] = useState(null);
 
-//handle for fetching addresses on page load
+//handle for fetching cautions on page load
 useEffect(() => {
     axios.get('http://localhost:5000/api/cautions').then((response) => {
     setCautions(response.data);
     });
 }, []);
 
-//handle for deleting address
+//handle for deleting cautions
 const handleDelete = (cautionId) => {
     axios
     .delete(`http://localhost:5000/api/cautions/${cautionId}`)
@@ -25,7 +25,7 @@ const handleDelete = (cautionId) => {
         });
     })
     .catch((error) => {
-        console.error('Error deleting address: ', error);
+        console.error('Error deleting caution: ', error);
     });
 };
 
