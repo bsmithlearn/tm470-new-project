@@ -12,8 +12,8 @@ addLineOne: String,
 addLineTwo: String,
 addLineThree: String,
 postcode: String,
-homePhone: Number,
-mobilePhone: Number,
+homePhone: String,
+mobilePhone: String,
 email: String,
 
 // police officer info
