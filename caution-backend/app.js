@@ -53,7 +53,7 @@ try {
 //Delete route for deleting caution with specified id
 app.delete('/api/cautions/:id', async (req, res) => {
 try {
-    await Caution.findByIdAndRemove(req.params.id);
+    await Caution.findByIdAndDelete(req.params.id);
     res.json({ message: 'Caution deleted' });
 } catch (err) {
     res.status(500).json({ error: err.message });
