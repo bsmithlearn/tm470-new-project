@@ -28,9 +28,9 @@ offenceDate: Date,
 offenceLocation: String,
 
 // status
-imposedAmt: mongoose.Types.Decimal128,
-paidAmt: mongoose.Types.Decimal128,
-balance: mongoose.Types.Decimal128,
+imposedAmt: Number,
+paidAmt: Number,
+balance: Number,
 acctStatus: String
 });
 

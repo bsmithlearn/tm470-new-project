@@ -111,7 +111,7 @@ return (
         </div>
         <div className='form-group'>
             <label>Offence Location:</label>
-            <input type="decimal" name="offenceLocation" onChange={handleChange} required className='form-control'/>
+            <input type="text" name="offenceLocation" onChange={handleChange} required className='form-control'/>
         </div>
         <div className='form-group'>
             <label>Imposed Amount:</label>

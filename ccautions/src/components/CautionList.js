@@ -405,29 +405,36 @@ return (
         {cautions.map((caution) => (
         <div className='container border border-dark rounded m-2 p-2 text-right' key={caution._id}>
             <h4>Defendant Details</h4>
+
             <h5>Forenames : {caution.name}</h5>
-            <h5>Surname : {caution.email}</h5>
-            <h5>Date of Birth : {caution.contact}</h5>
-            <h5>Address Line One: {caution.address}</h5>
-            <h5>Address Line Two : {caution.name}</h5>
-            <h5>Address Line Three : {caution.email}</h5>
-            <h5>Postcode : {caution.contact}</h5>
-            <h5>Home Telephone Number : {caution.address}</h5>
-            <h5>Mobile Telephone Number : {caution.name}</h5>
+            <h5>Surname : {caution.surname}</h5>
+            <h5>Date of Birth : {caution.dob}</h5>
+            <h5>Address Line One: {caution.addLineOne}</h5>
+            <h5>Address Line Two : {caution.addLineTwo}</h5>
+            <h5>Address Line Three : {caution.addLineThree}</h5>
+            <h5>Postcode : {caution.postcode}</h5>
+            <h5>Home Telephone Number : {caution.homePhone}</h5>
+            <h5>Mobile Telephone Number : {caution.mobilePhone}</h5>
             <h5>Email : {caution.email}</h5>
+
             <h4>Police Details</h4>
-            <h5>Officer ID : {caution.contact}</h5>
-            <h5>Officer Rank and Surname : {caution.address}</h5>
-            <h5>Force ID: {caution.address}</h5>
+
+            <h5>Officer ID : {caution.officerID}</h5>
+            <h5>Officer Rank and Surname : {caution.officerRankSurname}</h5>
+            <h5>Force ID: {caution.forceID}</h5>
+
             <h4>Offence Details</h4>
-            <h5>Offence Description: {caution.name}</h5>
-            <h5>Offence Date : {caution.email}</h5>
-            <h5>Offence Location : {caution.contact}</h5>
+
+            <h5>Offence Description: {caution.offenceDesc}</h5>
+            <h5>Offence Date : {caution.offenceDate}</h5>
+            <h5>Offence Location : {caution.offenceLocation}</h5>
+
             <h4>Account Details</h4>
-            <h5>Imposed Amount: {caution.address}</h5>
-            <h5>Paid Amount : {caution.name}</h5>
-            <h5>Balance : {caution.email}</h5>
-            <h5>Account Status : {caution.contact}</h5>
+
+            <h5>Imposed Amount: {caution.imposedAmt}</h5>
+            <h5>Paid Amount : {caution.paidAmt}</h5>
+            <h5>Balance : {caution.balance}</h5>
+            <h5>Account Status : {caution.acctStatus}</h5>
 
             <button
             className="btn btn-sm"
