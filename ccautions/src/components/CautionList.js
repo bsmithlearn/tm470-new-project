@@ -57,6 +57,38 @@ return (
         <div>
         <h2>Edit Caution</h2>
         <form onSubmit={() => handleUpdate(selectedCaution)}>
+        <div className="form-group">
+            <label>MOJ Reference:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="mojRef"
+                value={selectedCaution.mojRef}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Police Reference:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="polRef"
+                value={selectedCaution.polRef}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
             <div className="form-group">
             <label>Forenames:</label>
             <input
@@ -404,9 +436,12 @@ return (
     <ul>
         {cautions.map((caution) => (
         <div className='container border border-dark rounded m-2 p-2 text-right' key={caution._id}>
+            <h4>Account References</h4>
+            <h5>MOJ Reference : {caution.mojRef}</h5>
+            <h5>Police Reference: {caution.polRef}</h5>
             <h4>Defendant Details</h4>
 
-            <h5>Forenames : {caution.name}</h5>
+            <h5>Forenames : {caution.forename}</h5>
             <h5>Surname : {caution.surname}</h5>
             <h5>Date of Birth : {caution.dob}</h5>
             <h5>Address Line One: {caution.addLineOne}</h5>

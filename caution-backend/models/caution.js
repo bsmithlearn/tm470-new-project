@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 //caution schema for storing cautions
 const cautionSchema = new mongoose.Schema({
 
+//Account References
+mojRef: String,
+polRef: String,
+
 // defendant info
 forename: String,
 surname: String,

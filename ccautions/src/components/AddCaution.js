@@ -9,6 +9,8 @@ const nav = useNavigate();
 //state for saving form data
 const [formData, setFormData] = useState({
 
+    mojRef: '',
+    polRef: '',
     forename: '',
     surname: '',
     dob: '',
@@ -49,6 +51,14 @@ return (
     <h2 className='display-2 text-center'>Add Caution</h2>
     < Navigation />
         <form onSubmit={handleSubmit}>
+        <div className='form-group'>
+            <label>MOJ Reference:</label>
+            <input type="text" name="mojRef" onChange={handleChange} required className='form-control'/>
+        </div>
+        <div className='form-group'>
+            <label>Police Reference:</label>
+            <input type="text" name="polRef" onChange={handleChange} required className='form-control'/>
+        </div>
         <div className='form-group'>
             <label>Forenames:</label>
             <input type="text" name="forename" onChange={handleChange} required className='form-control'/>
