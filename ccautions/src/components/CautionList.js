@@ -404,10 +404,31 @@ return (
     <ul>
         {cautions.map((caution) => (
         <div className='container border border-dark rounded m-2 p-2 text-right' key={caution._id}>
-            <h5>Name : {caution.name}</h5>
+            <h4>Defendant Details</h4>
+            <h5>Forenames : {caution.name}</h5>
+            <h5>Surname : {caution.email}</h5>
+            <h5>Date of Birth : {caution.contact}</h5>
+            <h5>Address Line One: {caution.address}</h5>
+            <h5>Address Line Two : {caution.name}</h5>
+            <h5>Address Line Three : {caution.email}</h5>
+            <h5>Postcode : {caution.contact}</h5>
+            <h5>Home Telephone Number : {caution.address}</h5>
+            <h5>Mobile Telephone Number : {caution.name}</h5>
             <h5>Email : {caution.email}</h5>
-            <h5>Contact : {caution.contact}</h5>
-            <h5>Address : {caution.address}</h5>
+            <h4>Police Details</h4>
+            <h5>Officer ID : {caution.contact}</h5>
+            <h5>Officer Rank and Surname : {caution.address}</h5>
+            <h5>Force ID: {caution.address}</h5>
+            <h4>Offence Details</h4>
+            <h5>Offence Description: {caution.name}</h5>
+            <h5>Offence Date : {caution.email}</h5>
+            <h5>Offence Location : {caution.contact}</h5>
+            <h4>Account Details</h4>
+            <h5>Imposed Amount: {caution.address}</h5>
+            <h5>Paid Amount : {caution.name}</h5>
+            <h5>Balance : {caution.email}</h5>
+            <h5>Account Status : {caution.contact}</h5>
+
             <button
             className="btn btn-sm"
             onClick={() => handleDelete(caution._id)}
