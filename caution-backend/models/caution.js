@@ -18,9 +18,9 @@ email: String,
 
 // police officer info
 officerID: String,
-officerSurname: String,
+officerRankSurname: String,
 officerRank: String,
-forceID: Number,
+forceID: String,
 
 // offence info
 offenceDesc: String,

@@ -20,8 +20,7 @@ const [formData, setFormData] = useState({
     mobilePhone: '',
     email: '',
     officerID: '',
-    officerSurname: '',
-    officerRank: '',
+    officerRankSurname: '',
     forceID: '',
     offenceDesc: '',
     offenceDate: '',
@@ -95,12 +94,8 @@ return (
             <input type="text" name="officerID" onChange={handleChange} required className='form-control'/>
         </div>
         <div className='form-group'>
-            <label>Officer Surname:</label>
-            <input type="text" name="officerSurname" onChange={handleChange} required className='form-control'/>
-        </div>
-        <div className='form-group'>
-            <label>Officer Rank:</label>
-            <input type="text" name="officerRank" onChange={handleChange} required className='form-control'/>
+            <label>Officer Rank and Surname:</label>
+            <input type="text" name="officerRankSurname" onChange={handleChange} required className='form-control'/>
         </div>
         <div className='form-group'>
             <label>Force ID:</label>

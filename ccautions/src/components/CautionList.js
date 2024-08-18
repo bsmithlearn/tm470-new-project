@@ -58,16 +58,160 @@ return (
         <h2>Edit Caution</h2>
         <form onSubmit={() => handleUpdate(selectedCaution)}>
             <div className="form-group">
-            <label>Name:</label>
+            <label>Forenames:</label>
             <input
                 type="text"
                 className="form-control"
-                name="name"
-                value={selectedCaution.name}
+                name="forename"
+                value={selectedCaution.forename}
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
                     name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Surname:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="surname"
+                value={selectedCaution.surname}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Date of Birth:</label>
+            <input
+                type="date"
+                className="form-control"
+                name="dob"
+                value={selectedCaution.dob}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Address Line 1:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="addLineOne"
+                value={selectedCaution.addLineOne}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Address Line 1:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="addLineOne"
+                value={selectedCaution.addLineOne}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Address Line 2:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="addLineTwo"
+                value={selectedCaution.addLineTwo}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Address Line 3:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="addLineThree"
+                value={selectedCaution.addLineThree}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Postcode:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="postcode"
+                value={selectedCaution.postcode}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    name: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Home Telephone Number:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="homePhone"
+                value={selectedCaution.homePhone}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    contact: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label>Mobile Telephone Number:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="mobilePhone"
+                value={selectedCaution.mobilePhone}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    contact: e.target.value,
                 })
                 }
                 required
@@ -90,28 +234,156 @@ return (
             />
             </div>
             <div className="form-group">
-            <label>Phone:</label>
+            <label>Officer ID:</label>
             <input
                 type="text"
                 className="form-control"
-                name="phone"
-                value={selectedCaution.contact}
+                name="officerID"
+                value={selectedCaution.officerID}
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    contact: e.target.value,
+                    address: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label>Address:</label>
+            <label>Officer Rank and Surname:</label>
             <input
                 type="text"
                 className="form-control"
-                name="name"
-                value={selectedCaution.address}
+                name="officerRankSurname"
+                value={selectedCaution.officerRankSurname}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Force ID:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="forceID"
+                value={selectedCaution.forceID}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Offence Description:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="offenceDesc"
+                value={selectedCaution.offenceDesc}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Offence Date:</label>
+            <input
+                type="date"
+                className="form-control"
+                name="offenceDate"
+                value={selectedCaution.offenceDate}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Offence Location:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="offenceLocation"
+                value={selectedCaution.offenceLocation}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Imposed Amount:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="imposedAmt"
+                value={selectedCaution.imposedAmt}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Amount Paid:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="paidAmt"
+                value={selectedCaution.paidAmt}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Balance:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="balance"
+                value={selectedCaution.balance}
+                onChange={(e) =>
+                setSelectedCaution({
+                    ...selectedCaution,
+                    address: e.target.value,
+                })
+                }
+                required
+            />
+            </div>
+            <div className="form-group">
+            <label> Acct Status:</label>
+            <input
+                type="text"
+                className="form-control"
+                name="acctStatus"
+                value={selectedCaution.acctStatus}
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
