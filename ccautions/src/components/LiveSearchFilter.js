@@ -66,7 +66,7 @@ class LiveSearchFilter extends Component {
   render() {
     return (
       <>
-        <h2>React Search Filter Example</h2>
+        <h2>Search Filter </h2>
         <div className="input-group mt-3">
           <input
             type="text"
