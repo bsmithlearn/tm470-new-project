@@ -443,7 +443,7 @@ return (
 
             <h5>Forenames : {caution.forename}</h5>
             <h5>Surname : {caution.surname}</h5>
-            <h5>Date of Birth : {caution.dob}</h5>
+            <h5>Date of Birth : {caution.dob.toDateString()}</h5>
             <h5>Address Line One: {caution.addLineOne}</h5>
             <h5>Address Line Two : {caution.addLineTwo}</h5>
             <h5>Address Line Three : {caution.addLineThree}</h5>
@@ -461,7 +461,7 @@ return (
             <h4>Offence Details</h4>
 
             <h5>Offence Description: {caution.offenceDesc}</h5>
-            <h5>Offence Date : {caution.offenceDate}</h5>
+            <h5>Offence Date : {caution.offenceDate.toDateString()}</h5>
             <h5>Offence Location : {caution.offenceLocation}</h5>
 
             <h4>Account Details</h4>
