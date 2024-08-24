@@ -70,7 +70,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -86,7 +86,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -102,7 +102,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -118,7 +118,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -134,7 +134,7 @@ return (
                     name: e.target.value,
                 })
                 }
-               //required
+               required
             />
             </div>
             <div className="form-group">
@@ -150,7 +150,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -166,7 +166,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -182,7 +182,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -214,7 +214,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -230,7 +230,7 @@ return (
                     contact: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -246,7 +246,7 @@ return (
                     contact: e.target.value,
                 })
                 }
-               //required
+               required
             />
             </div>
             <div className="form-group">
@@ -262,7 +262,7 @@ return (
                     email: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -278,7 +278,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -294,7 +294,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -310,7 +310,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -326,7 +326,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -342,7 +342,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -358,7 +358,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -374,7 +374,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -390,7 +390,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -406,7 +406,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div className="form-group">
@@ -422,7 +422,7 @@ return (
                     address: e.target.value,
                 })
                 }
-                //required
+                required
             />
             </div>
             <div>
