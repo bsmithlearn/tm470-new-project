@@ -67,10 +67,10 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    mojRef: e.target.value,
                 })
                 }
-                //required
+                
             />
             </div>
             <div className="form-group">
@@ -83,7 +83,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    polRef: e.target.value,
                 })
                 }
                 required
@@ -99,7 +99,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    forename: e.target.value,
                 })
                 }
                 required
@@ -115,7 +115,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    surname: e.target.value,
                 })
                 }
                 required
@@ -131,7 +131,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    dob: e.target.value,
                 })
                 }
                required
@@ -147,7 +147,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    addLineOne: e.target.value,
                 })
                 }
                 required
@@ -163,7 +163,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    addLineTwo: e.target.value,
                 })
                 }
                 required
@@ -179,10 +179,10 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    addLineThree: e.target.value,
                 })
                 }
-                //required
+                
             />
             </div>
             <div className="form-group">
@@ -195,7 +195,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    postcode: e.target.value,
                 })
                 }
                 required
@@ -211,7 +211,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    contact: e.target.value,
+                    homePhone: e.target.value,
                 })
                 }
                 required
@@ -227,7 +227,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    contact: e.target.value,
+                    mobilePhone: e.target.value,
                 })
                 }
                required
@@ -259,7 +259,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    officerID: e.target.value,
                 })
                 }
                 required
@@ -275,7 +275,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    officerRankSurname: e.target.value,
                 })
                 }
                 required
@@ -291,7 +291,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    forceID: e.target.value,
                 })
                 }
                 required
@@ -307,7 +307,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceDesc: e.target.value,
                 })
                 }
                 required
@@ -323,7 +323,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceDate: e.target.value,
                 })
                 }
                 required
@@ -339,7 +339,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceLocation: e.target.value,
                 })
                 }
                 required
@@ -355,7 +355,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    imposedAmt: e.target.value,
                 })
                 }
                 required
@@ -371,7 +371,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    paidAmt: e.target.value,
                 })
                 }
                 required
@@ -387,7 +387,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    balance: e.target.value,
                 })
                 }
                 required
@@ -403,7 +403,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    acctStatus: e.target.value,
                 })
                 }
                 required
