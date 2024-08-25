@@ -67,10 +67,10 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    mojRef: e.target.value,
                 })
                 }
-                required
+                
             />
             </div>
             <div className="form-group">
@@ -83,7 +83,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    polRef: e.target.value,
                 })
                 }
                 required
@@ -99,7 +99,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    forename: e.target.value,
                 })
                 }
                 required
@@ -115,26 +115,26 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    surname: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label>Date of Birth:</label>
+            <label>Date of Birth: DD/MM/YYYY</label>
             <input
-                type="date"
+                type="String"
                 className="form-control"
                 name="dob"
                 value={selectedCaution.dob}
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    dob: e.target.value,
                 })
                 }
-                required
+               required
             />
             </div>
             <div className="form-group">
@@ -147,23 +147,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
-                })
-                }
-                required
-            />
-            </div>
-            <div className="form-group">
-            <label>Address Line 1:</label>
-            <input
-                type="text"
-                className="form-control"
-                name="addLineOne"
-                value={selectedCaution.addLineOne}
-                onChange={(e) =>
-                setSelectedCaution({
-                    ...selectedCaution,
-                    name: e.target.value,
+                    addLineOne: e.target.value,
                 })
                 }
                 required
@@ -179,7 +163,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    addLineTwo: e.target.value,
                 })
                 }
                 required
@@ -195,10 +179,10 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    addLineThree: e.target.value,
                 })
                 }
-                required
+                
             />
             </div>
             <div className="form-group">
@@ -211,7 +195,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    name: e.target.value,
+                    postcode: e.target.value,
                 })
                 }
                 required
@@ -227,7 +211,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    contact: e.target.value,
+                    homePhone: e.target.value,
                 })
                 }
                 required
@@ -243,10 +227,10 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    contact: e.target.value,
+                    mobilePhone: e.target.value,
                 })
                 }
-                required
+               required
             />
             </div>
             <div className="form-group">
@@ -275,7 +259,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    officerID: e.target.value,
                 })
                 }
                 required
@@ -291,14 +275,14 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    officerRankSurname: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label> Force ID:</label>
+            <label>Force ID:</label>
             <input
                 type="text"
                 className="form-control"
@@ -307,14 +291,14 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    forceID: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label> Offence Description:</label>
+            <label>Offence Description:</label>
             <input
                 type="text"
                 className="form-control"
@@ -323,30 +307,30 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceDesc: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label> Offence Date:</label>
+            <label>Offence Date: DD/MM/YYYY</label>
             <input
-                type="date"
+                type="text"
                 className="form-control"
                 name="offenceDate"
                 value={selectedCaution.offenceDate}
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceDate: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label> Offence Location:</label>
+            <label>Offence Location:</label>
             <input
                 type="text"
                 className="form-control"
@@ -355,14 +339,14 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    offenceLocation: e.target.value,
                 })
                 }
                 required
             />
             </div>
             <div className="form-group">
-            <label> Imposed Amount:</label>
+            <label>Imposed Amount:</label>
             <input
                 type="text"
                 className="form-control"
@@ -371,7 +355,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    imposedAmt: e.target.value,
                 })
                 }
                 required
@@ -387,7 +371,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    paidAmt: e.target.value,
                 })
                 }
                 required
@@ -403,7 +387,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    balance: e.target.value,
                 })
                 }
                 required
@@ -419,7 +403,7 @@ return (
                 onChange={(e) =>
                 setSelectedCaution({
                     ...selectedCaution,
-                    address: e.target.value,
+                    acctStatus: e.target.value,
                 })
                 }
                 required
@@ -439,6 +423,7 @@ return (
             <h4>Account References</h4>
             <h5>MOJ Reference : {caution.mojRef}</h5>
             <h5>Police Reference: {caution.polRef}</h5>
+            
             <h4>Defendant Details</h4>
 
             <h5>Forenames : {caution.forename}</h5>
