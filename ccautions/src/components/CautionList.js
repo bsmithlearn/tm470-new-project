@@ -154,22 +154,6 @@ return (
             />
             </div>
             <div className="form-group">
-            <label>Address Line 1:</label>
-            <input
-                type="text"
-                className="form-control"
-                name="addLineOne"
-                value={selectedCaution.addLineOne}
-                onChange={(e) =>
-                setSelectedCaution({
-                    ...selectedCaution,
-                    name: e.target.value,
-                })
-                }
-                required
-            />
-            </div>
-            <div className="form-group">
             <label>Address Line 2:</label>
             <input
                 type="text"
