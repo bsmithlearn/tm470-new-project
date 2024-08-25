@@ -7,8 +7,9 @@ const cautionSchema = new mongoose.Schema({
 //Account References
     mojRef: { 
         type: String,
-        match: /^[0-9]{7}[A-Z]$/
+        match: /^[0-9]{7}[A-Z]$|/
          // MOJ ref is 7 digits followed by a capital letter. e.g. 1234567A
+         // MOJ ref can be left blank as intially no reference available.
     },
     polRef: {
        type: String, 

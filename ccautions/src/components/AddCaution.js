@@ -60,8 +60,9 @@ const handleSubmit = (e) => {
     const validateForm = (data) => {
         const errors = {};
 
-        if (!/^[0-9]{7}[A-Z]$/.test(data.mojRef)) {
+        if (!/^[0-9]{7}[A-Z]$|/.test(data.mojRef)) {
             errors.mojRef = 'MOJ ref is 7 digits followed by a capital letter. e.g. 1234567A';
+            //MOJ ref can also be left blank as intially no MOJ ref available.
         }
 
 
@@ -156,7 +157,7 @@ return (
         <form onSubmit={handleSubmit}>
         <div className='form-group'>
             <label>MOJ Reference:</label>
-            <input type="text" name="mojRef" onChange={handleChange} required className='form-control'/>
+            <input type="text" name="mojRef" onChange={handleChange} className='form-control'/>
             {errors.mojRef && (
                 <span className="error-message">
                     {errors.mojRef}
