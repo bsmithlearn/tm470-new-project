@@ -70,7 +70,7 @@ return (
                     name: e.target.value,
                 })
                 }
-                required
+                //required
             />
             </div>
             <div className="form-group">

@@ -97,9 +97,7 @@ const handleSubmit = (e) => {
             errors.addLineTwo = 'addLineTwo must be at most 50 characters long';
         }
 
-        if (data.addLineThree.length < 3) {
-            errors.addLineThree= 'addLineThree must be at least 3 characters long';
-        } else if (data.addLineThree.length > 50) {
+        if (data.addLineThree.length > 50) {
             errors.addLineThree = 'addLineThree must be at most 50 characters long';
         } 
 
