@@ -6,6 +6,7 @@ import Navigation from './Navigation';
 
 const AddCaution = () => {
 const nav = useNavigate();
+
 //state for saving form data
 const [formData, setFormData] = useState({
 
