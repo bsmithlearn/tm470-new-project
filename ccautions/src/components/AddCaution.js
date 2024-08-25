@@ -79,7 +79,11 @@ const handleSubmit = (e) => {
             errors.surname = 'Surname must be at least 3 characters long';
         } else if (data.surname.length > 20) {
             errors.surname = 'Surname must be at most 20 characters long';
-        }  
+        }
+        
+        if (!/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/.test(data.dob)) {
+            errors.dob = 'Offence date must be in DD/MM/YYYY format use / only';
+        }
 
         if (data.addLineOne.length < 3) {
             errors.addLineOne= 'addLineOne must be at least 3 characters long';
@@ -129,7 +133,11 @@ const handleSubmit = (e) => {
 
         if (data.offenceDesc.length > 100) {
             errors.offenceDesc = 'Offence description must be at most 100 characters long';
-        } 
+        }
+        
+        if (!/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/.test(data.offenceDate)) {
+            errors.offenceDate = 'Offence date must be in DD/MM/YYYY format use / only';
+        }
 
         if (data.offenceLocation.length > 50) {
             errors.offenceLocation = 'Offence location must be at most 50 characters long';
@@ -186,7 +194,12 @@ return (
         </div>
         <div className='form-group'>
             <label>Date of Birth:</label>
-            <input type="date" name="dob" onChange={handleChange} required className='form-control'/>
+            <input type="text" name="dob" onChange={handleChange} required className='form-control'/>
+            {errors.dob && (
+                <span className="error-message">
+                    {errors.dob}
+                </span>
+                )}
         </div>
         <div className='form-group'>
             <label>Address Line One:</label>
@@ -289,7 +302,12 @@ return (
         </div>
         <div className='form-group'>
             <label>Offence Date:</label>
-            <input type="date" name="offenceDate" onChange={handleChange} required className='form-control'/>
+            <input type="text" name="offenceDate" onChange={handleChange} required className='form-control'/>
+            {errors.offenceDate && (
+                <span className="error-message">
+                    {errors.offenceDate}
+                </span>
+                )}
         </div>
         <div className='form-group'>
             <label>Offence Location:</label>

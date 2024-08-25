@@ -122,9 +122,9 @@ return (
             />
             </div>
             <div className="form-group">
-            <label>Date of Birth:</label>
+            <label>Date of Birth: DD/MM/YYYY</label>
             <input
-                type="date"
+                type="String"
                 className="form-control"
                 name="dob"
                 value={selectedCaution.dob}
@@ -282,7 +282,7 @@ return (
             />
             </div>
             <div className="form-group">
-            <label> Force ID:</label>
+            <label>Force ID:</label>
             <input
                 type="text"
                 className="form-control"
@@ -298,7 +298,7 @@ return (
             />
             </div>
             <div className="form-group">
-            <label> Offence Description:</label>
+            <label>Offence Description:</label>
             <input
                 type="text"
                 className="form-control"
@@ -314,9 +314,9 @@ return (
             />
             </div>
             <div className="form-group">
-            <label> Offence Date:</label>
+            <label>Offence Date: DD/MM/YYYY</label>
             <input
-                type="date"
+                type="text"
                 className="form-control"
                 name="offenceDate"
                 value={selectedCaution.offenceDate}
@@ -330,7 +330,7 @@ return (
             />
             </div>
             <div className="form-group">
-            <label> Offence Location:</label>
+            <label>Offence Location:</label>
             <input
                 type="text"
                 className="form-control"
@@ -346,7 +346,7 @@ return (
             />
             </div>
             <div className="form-group">
-            <label> Imposed Amount:</label>
+            <label>Imposed Amount:</label>
             <input
                 type="text"
                 className="form-control"

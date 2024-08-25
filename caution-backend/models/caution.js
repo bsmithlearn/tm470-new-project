@@ -33,7 +33,9 @@ const cautionSchema = new mongoose.Schema({
         trim: true
     },
     dob: {
-        type: Date,
+        type: String,
+        match: /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/,
+         // DOB DD/MM/YYYY
         required: [true, 'A date of birth is required'],
     },
     addLineOne: {
@@ -104,7 +106,9 @@ const cautionSchema = new mongoose.Schema({
         trim: true
     },
     offenceDate: {
-        type: Date,
+        type: String,
+        match: /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/,
+         // Offence date DD/MM/YYYY
         required: [true, 'The offence date is required'],
     },
     offenceLocation: {
