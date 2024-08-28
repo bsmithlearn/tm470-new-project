@@ -7,15 +7,17 @@ const cautionSchema = new mongoose.Schema({
 //Account References
     mojRef: { 
         type: String,
-        match: /^[0-9]{7}[A-Z]$|/
+        match: /^[0-9]{7}[A-Z]$|/,
          // MOJ ref is 7 digits followed by a capital letter. e.g. 1234567A
          // MOJ ref can be left blank as intially no reference available.
+         unique: true
     },
     polRef: {
        type: String, 
        match: /^[0-9]{2}\/[A-Z]{2}\/[0-9]{5}\/[0-9]{2}$/,
        // police ref is 2digits / 2 capital letters / 5 digits / 2 digits e.g. 01/AB/23456/78
        required: [true, 'The police reference is required'],
+       unique: true
     },
 
     // defendant info   
