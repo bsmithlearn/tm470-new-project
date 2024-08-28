@@ -108,15 +108,15 @@ const handleSubmit = (e) => {
         } 
 
         if (!/^(?:0|\+?44)(?:\d\s?){9,10}$/.test(data.homePhone)) {
-            errors.homePhone = 'Not a valid Landline Number';
+            errors.homePhone = 'Not a valid Landline Number format +44 or 0 followed by 9/10 numbers';
         }
 
         if (!/^(?:0|\+?44)[7]\d\s?(?:\d\s?){7,8}$/.test(data.mobilePhone)) {
-            errors.mobilePhone = 'Not a valid mobile phone number';
+            errors.mobilePhone = 'Not a valid mobile phone number format +44 or 0 followed by 7/8 numbers';
         }
 
         if (!/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,5})$/.test(data.email)) {
-            errors.email = 'Email is invalid';
+            errors.email = 'Email is invalid (lower case only)';
         }
 
         if (data.officerID.length > 10) {
@@ -128,7 +128,7 @@ const handleSubmit = (e) => {
         } 
 
         if (data.forceID.length > 2) {
-            errors.forceID = 'Force ID must be at most 2 characters long';
+            errors.forceID = 'Force ID must be at most 2 digits long';
         } 
 
         if (data.offenceDesc.length > 100) {

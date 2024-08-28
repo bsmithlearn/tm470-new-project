@@ -1,4 +1,8 @@
 {
     "appService.defaultWebAppToDeploy": "/subscriptions/992e0cf2-c453-46c2-8127-c94c5b543da4/resourceGroups/tm470_PROJ/providers/Microsoft.Web/sites/tm470demonstrator",
-    "appService.deploySubpath": "ccautions/build"
+    "appService.deploySubpath": "ccautions/build",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
 }
